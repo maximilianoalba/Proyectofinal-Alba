@@ -1,0 +1,20 @@
+/*bady background*/
+@mixin body-background() {
+  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+  height: 100vh;
+}
+
+/*Contenedor main*/
+@mixin contenedor-main() {
+  margin: 5%;
+  padding: 5%;
+  font-family: "Courier New", Courier, monospace;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-around;
+}

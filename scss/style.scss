@@ -1,0 +1,74 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/variables-dark";
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";
+@import "../node_modules/bootstrap/scss/utilities";
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/bootstrap/scss/images";
+@import "../node_modules/bootstrap/scss/containers";
+@import "../node_modules/bootstrap/scss/grid";
+@import "../node_modules/bootstrap/scss/helpers";
+@import "../node_modules/bootstrap/scss/utilities/api";
+@import "./base/variables";
+@import "./base/mixin";
+@import "./base/card";
+@import "./base/boton";
+/*inicio de body*/
+body {
+  @include body-background;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.nav-item {
+  list-style-type: none;
+  .nav-link {
+    color: $color-hover;
+    &:hover {
+      color: rgb(236, 4, 4);
+    }
+  }
+}
+/*main*/
+.main_contenedor {
+  @include contenedor-main;
+  .main-titulo {
+    color: $color-titulos;
+  }
+}
+.main-texto {
+  font-size: 20px;
+  color: $color-parrafos;
+}
+.main-titulo-dos {
+  color: $color-titulos;
+}
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 132deg;
+  inherits: false;
+}
+/*Footer*/
+.footer-a {
+  margin: 10px;
+  font-size: 20px;
+  color: $color-iconos;
+  &:hover {
+    color: $color-hover;
+    transition: color 0.5s;
+  }
+}
+.form-label {
+  color: $color-titulos;
+}
